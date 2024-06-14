@@ -24,7 +24,7 @@ DEVICE = load_local_devices(TYPE_DEVICE).first
 DEVICE_ID = DEVICE.split(':::')[1]
 DEVICE_NAME = DEVICE.split(':::').first
 TEST_LOCATION = DEVICE.split(':::').last
-PATH_APP = "./config/app/#{PLATFORM.downcase}/#{android? ? 'app-hk-release.apk' : "Webmotors.#{real? ? 'ipa' : 'app'}"}"
+PATH_APP = "./config/app/#{PLATFORM.downcase}/#{android? ? 'app-hk-release.apk' : "app.#{real? ? 'ipa' : 'app'}"}"
 APP_CONFIG_DATA = YAML.load_file(File.expand_path(File.join('config', 'standard.yaml'), __dir__))
 Appium::Driver.new(load_appium_capabilities, true)
 Faker::Config.locale = 'pt-BR'

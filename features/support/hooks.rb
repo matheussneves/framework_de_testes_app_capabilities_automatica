@@ -58,7 +58,7 @@ at_exit do
     config.report_title = 'Relatório de Testes automatizados'
     config.compress_images = false
     config.color = 'red'
-    config.additional_info = {'Project name' => 'WebMotors', 'Platform' => 'Front',
+    config.additional_info = {'Project name' => 'teste', 'Platform' => 'Front',
                                'Report generated' => time}
   end
   ReportBuilder.build_report
