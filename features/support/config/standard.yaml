@@ -1,0 +1,6 @@
+caps:
+  local:
+    url: http://0.0.0.0:4723/wd/hub
+    automationName:
+      android: UIAutomator2
+      ios: XCUITest

@@ -1,0 +1,998 @@
+root:
+  - data: value
+    data_variable:
+      default: value
+      data_x: Value
+      data_y: value
+    data_variable_two:
+      default: value
+      x: Value
+      z: value
+    profiles:
+      - profile_x
+      - profile_y
+      - system_y
+      - system_z
+  - data: Object two
+    data_variable:
+      default: value
+      data_x: Value
+      data_y: value
+    data_variable_two:
+      default: value
+      x: Value
+      z: value
+    profiles:
+      - profile_x    
+
+usuarios:
+  - telefone: '11931006056'
+    nome: 'Cauê Luan Teixeira'
+    cpf: '28258405802'
+    data_nascimento: '23/01/1965'
+    senha: 'Teste125!'
+    email: "testelocation@outlook.com"
+    cep: '32150245'
+    cidade: 'Contagem'
+    estado: 'MG'
+    profiles:
+      - valido
+      - chat
+  - telefone: '11931006056'
+    nome: 'Cauê Luan Teixeira'
+    cpf: '28258405802'
+    data_nascimento: '23/01/1965'
+    senha: 'Teste125!'
+    email: 'taoufik221@uorak.com'
+    cep: '32150245'
+    cidade: 'Contagem'
+    estado: 'MG'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Pietro Pedro Roberto Castro'
+    cpf: '92379331774'
+    data_nascimento: '15/03/1998'
+    senha: 'Teste125!'
+    email: 'pascualina2513@uorak.com'
+    cep: '68928148'
+    cidade: 'Santana'
+    estado: 'AP'
+    profiles:
+      - invalido
+      - telefone_errado
+  - telefone: '11931006056'
+    nome:  'Matheus Gustavo Matheus Cardoso'
+    cpf: '83162408741'
+    data_nascimento: '01/03/1950'
+    senha: 'Teste125!'
+    email: 'aurimas6784@uorak.com'
+    cep: '88338485'
+    cidade: 'Balneário Camboriú'
+    estado: 'SC'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Joaquim Samuel da Rocha'
+    cpf: '93108244337'
+    data_nascimento: '05/03/1961'
+    senha: 'Teste125!'
+    email: 'kalilu6274@uorak.com'
+    cep: '12215500'
+    cidade: 'São José dos Campos'
+    estado: 'SP'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Andrea Alessandra Lopes'
+    cpf: '93951822708'
+    data_nascimento: '03/01/1958'
+    senha: 'Teste125!'
+    email: 'roxana5473@uorak.com'
+    cep: '35900642'
+    cidade: 'Itabira'
+    estado: 'MG'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Débora Yasmin Galvão'
+    cpf: '49261019714'
+    data_nascimento: '13/01/2002'
+    senha: 'Teste125!'
+    email: 'tessie4825@uorak.com'
+    cep: '68904680'
+    cidade: 'Macapá'
+    estado: 'AP'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Cauê Yago Cavalcanti'
+    cpf: '93106180609'
+    data_nascimento: '18/03/1950'
+    senha: 'Teste125!'
+    email: 'rute6862@uorak.com'
+    cep: '91760670'
+    cidade: 'Porto Alegre'
+    estado: 'RS'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Priscila Hadassa Sales'
+    cpf: '96163882822'
+    data_nascimento: '21/01/1972'
+    senha: 'Teste125!'
+    email: 'dado5748@uorak.com'
+    cep: '71727007'
+    cidade: 'Brasília'
+    estado: 'DF'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Paulo Eduardo Brito'
+    cpf: '21947576860'
+    data_nascimento: '07/02/1983'
+    senha: 'Teste125!'
+    email: 'poonam5298@uorak.com'
+    cep: '58074660'
+    cidade: 'João Pessoa'
+    estado: 'PB'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Olivia Luna Moreira'
+    cpf: '21426801432'
+    data_nascimento: '13/03/1947'
+    senha: 'Teste125!'
+    email: 'ouadie5317@uorak.com'
+    cep: '35300192'
+    cidade: 'Caratinga'
+    estado: 'MG'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'André Yuri Cauê Carvalho'
+    cpf: '01286466830'
+    data_nascimento: '14/02/1973'
+    senha: 'Teste125!'
+    email: 'aleksandrina1678@uorak.com'
+    cep: '70855405'
+    endereco: 'Quadra EQN 408/409 Bloco A'
+    cidade: 'Brasília'
+    estado: 'DF'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Teresinha Carla Aragão'
+    cpf: '91018491317'
+    data_nascimento: '11/03/1985'
+    senha: 'Teste125!'
+    email: 'ilena4340@uorak.com'
+    cep: '72544415'
+    cidade: 'Brasília'
+    estado: 'DF'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Igor Martin Renan da Mota'
+    cpf: '19788670261'
+    data_nascimento: '21/03/1969'
+    senha: 'Teste125!'
+    email: 'yeremay5785@uorak.com'
+    cep: '72865049'
+    cidade: 'Novo Gama'
+    estado: 'GO'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Luiza Laís Duarte'
+    cpf: '78993582300'
+    data_nascimento: '17/02/1972'
+    senha: 'Teste125!'
+    email: 'annis713@uorak.com'
+    cep: '69005250'
+    cidade: 'Manaus'
+    estado: 'AM'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Isabelly Gabriela Almada'
+    cpf: '44252069912'
+    data_nascimento: '10/02/1986'
+    senha: 'Teste125!'
+    email: 'corin2034@uorak.com'
+    cep: '76801638'
+    cidade: 'Porto Velho'
+    estado: 'RO'
+    profiles:
+      - invalido
+  - telefone: '11931006056'
+    nome:  'Aurora Esther Drumond'
+    cpf: '90860412997'
+    data_nascimento: '05/02/2002'
+    senha: 'Teste125!'
+    email: 'gala1854@uorak.com'
+    cep: '75912312'
+    cidade: 'Rio Verde'
+    estado: 'GO'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Mariana Helena Gonçalves'
+    cpf: '74767620538'
+    data_nascimento: '14/03/1965'
+    senha: 'Teste125!'
+    email: 'mesias5944@uorak.com'
+    cep: '58106371'
+    cidade: 'Cabedelo'
+    estado: 'PB'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Débora Eduarda Barbosa'
+    cpf: '94550422157'
+    data_nascimento: '17/01/1984'
+    senha: 'Teste125!'
+    email: 'shakil1430@uorak.com'
+    cep: '69550274'
+    cidade: 'Tefé'
+    estado: 'AM'
+    profiles:
+      - valido
+  - telefone: '11931006056'
+    nome:  'Emilly Gabrielly Stella Gomes'
+    cpf: '40815550014'
+    data_nascimento: '04/03/1945'
+    senha: 'Teste125!'
+    email: 'coralio5814@uorak.com'
+    cep: '69903100'
+    cidade: 'Rio Branco'
+    estado: 'AC'
+    profiles:
+      - chat
+      - valido
+  - telefone: '11931006056'
+    nome:  'Enzo Leandro Caleb Dias'
+    cpf: '85940436943'
+    data_nascimento: '11/03/2005'
+    senha: 'Teste125!'
+    email: 'ramon7769@uorak.com'
+    cep: '55192085'
+    cidade: 'Santa Cruz do Capibaribe'
+    estado: 'PE'
+    cor: 'azul'
+    profiles:
+      - valido
+      - sem_cpf
+      - sem_cep
+      - sem_data_nascimento
+  - telefone: ''
+    nome:  ''
+    cpf: ''
+    data_nascimento: ''
+    senha: '1234567%& '
+    email: 'brunorcnoberto@hotmail.com'
+    cep: ''
+    cidade: ''
+    estado: ''
+    profiles:
+      - invalido
+      - senha_invalida
+  - telefone: ''
+    nome:  ''
+    cpf: ''
+    data_nascimento: ''
+    senha: 'Brun@web0'
+    email: 'email@errado.com  '
+    cep: ''
+    cidade: ''
+    estado: ''
+    profiles:
+      - invalido
+      - email_invalido
+  - telefone: ''
+    nome:  ''
+    cpf: ''
+    data_nascimento: ''
+    senha: '647973740'
+    email: 'joatabatista@gmail.com'
+    cep: ''
+    cidade: ''
+    estado: ''
+    profiles:
+      - invalido
+      - email_e_senha_invalidos
+      
+filtro:
+  - veiculo: 'Carros'
+    filtros:
+        km:
+          nome: 'KM'
+          valor: ''
+        estado:
+          nome: 'Estado'
+          valor: 'São Paulo (SP)'
+        cidade:
+          nome: 'Cidade'
+          valor: 'Campinas'
+        distancia:
+          nome: 'Distância'
+          valor: ''
+        marca:
+          nome: 'Marca'
+          valor: 'AUDI'
+        modelo:
+          nome: 'Modelo'
+          valor: 'A1'
+        versao:
+          nome: 'Versão'
+          valor: '1.4 TFSI SPORTBACK ATTRACTION 16V 122CV GASOLINA 4P S-TRONIC'
+        ano:
+          nome: 'Ano'
+          valor: '2018'
+        preco:
+          nome: 'Preço'
+          valor: ''
+        cambio:
+          nome: 'Câmbio'
+          valor: ''
+        combustivel:
+          nome: ''
+          valor: ''
+        portas:
+          nome: 'Portas'
+          valor: ''
+        cor:
+          nome: 'Cor'
+          valor: ''
+        final_da_placa:
+          nome: 'Final da Placa'
+          valor: ''
+        carroceria:
+          nome: 'Carroceria'
+          valor: ''
+        tipo_de_necessidade:
+          nome: 'Tipo de Necessidade'
+          valor: ''
+        opcionais:
+          nome: 'Opcionais'
+          valor: ''
+        blindagem:
+          nome: 'Blindagem'
+          valor: false
+        oportunidades:
+          nome: 'Oportunidades'
+          valor: ''
+        documentacao:
+          nome: 'Documentação'
+          valor: ''
+        anunciante:
+          nome: 'Anunciante'
+          valor: ''
+    profiles:
+      - astra
+  - veiculo: 'Carros'
+    filtros:
+        km:
+          nome: 'KM'
+          valor: ''
+        estado:
+          nome: 'Estado'
+          valor: ''
+        cidade:
+          nome: 'Cidade'
+          valor: ''
+        distancia:
+          nome: 'Distância'
+          valor: ''
+        marca:
+          nome: 'Marca'
+          valor: ''
+        modelo:
+          nome: 'Modelo'
+          valor: ''
+        versao:
+          nome: 'Versão'
+          valor: ''
+        ano:
+          nome: 'Ano'
+          valor: ''
+        preco:
+          nome: 'Preço'
+          valor: ''
+        cambio:
+          nome: 'Câmbio'
+          valor: ''
+        combustivel:
+          nome: ''
+          valor: ''
+        portas:
+          nome: 'Portas'
+          valor: ''
+        cor:
+          nome: 'Cor'
+          valor: ''
+        final_da_placa:
+          nome: 'Final da Placa'
+          valor: ''
+        carroceria:
+          nome: 'Carroceria'
+          valor: ''
+        tipo_de_necessidade:
+          nome: 'Tipo de Necessidade'
+          valor: ''
+        opcionais:
+          nome: 'Opcionais'
+          valor: ''
+        blindagem:
+          nome: 'Blindagem'
+          valor: ''
+        oportunidades:
+          nome: 'Oportunidades'
+          valor:
+          - 'Vistoriado'
+          - 'Visão360°'
+        documentacao:
+          nome: 'Documentação'
+          valor: ''
+        anunciante:
+          nome: 'Anunciante'
+          valor: ''
+    profiles:
+      - vistoriado360
+  - veiculo: 'Motos'
+    filtros:
+        km:
+          nome: 'KM'
+          valor: ''
+        estado:
+          nome: 'Estado'
+          valor: 'São Paulo (SP)'
+        cidade:
+          nome: 'Cidade'
+          valor: 'Campinas'
+        distancia:
+          nome: 'Distância'
+          valor: ''
+        marca:
+          nome: 'Marca'
+          valor: 'BMW'
+        modelo:
+          nome: 'Modelo'
+          valor: 'F 700 GS'
+        versao:
+          nome: 'Versão'
+          valor: ''
+        ano:
+          nome: 'Ano'
+          valor: '2018'
+        preco:
+          nome: 'Preço'
+          valor: ''
+        cambio:
+          nome: 'Câmbio'
+          valor: ''
+        combustivel:
+          nome: ''
+          valor: ''
+        portas:
+          nome: 'Portas'
+          valor: ''
+        cor:
+          nome: 'Cor'
+          valor: ''
+        final_da_placa:
+          nome: 'Final da Placa'
+          valor: ''
+        carroceria:
+          nome: 'Carroceria'
+          valor: ''
+        tipo_de_necessidade:
+          nome: 'Tipo de Necessidade'
+          valor: ''
+        opcionais:
+          nome: 'Opcionais'
+          valor: ''
+        blindagem:
+          nome: 'Blindagem'
+          valor: false
+        oportunidades:
+          nome: 'Oportunidades'
+          valor: ''
+        documentacao:
+          nome: 'Documentação'
+          valor: ''
+        anunciante:
+          nome: 'Anunciante'
+          valor: ''
+    profiles:
+      - f_800_r
+  - veiculo: 'Carros'
+    filtros:
+        km:
+          nome: 'KM'
+          valor: ''
+        estado:
+          nome: 'Estado'
+          valor: ''
+        cidade:
+          nome: 'Cidade'
+          valor: ''
+        distancia:
+          nome: 'Distância'
+          valor: ''
+        marca:
+          nome: 'Marca'
+          valor: 'HYUNDAI'
+        modelo:
+          nome: 'Modelo'
+          valor: 'AZERA'
+        versao:
+          nome: 'Versão'
+          valor: ''
+        ano:
+          nome: 'Ano'
+          valor: ''
+        preco:
+          nome: 'Preço'
+          valor: ''
+        cambio:
+          nome: 'Câmbio'
+          valor: ''
+        combustivel:
+          nome: ''
+          valor: ''
+        portas:
+          nome: 'Portas'
+          valor: ''
+        cor:
+          nome: 'Cor'
+          valor: ''
+        final_da_placa:
+          nome: 'Final da Placa'
+          valor: '5 e 6'
+        carroceria:
+          nome: 'Carroceria'
+          valor: ''
+        tipo_de_necessidade:
+          nome: 'Tipo de Necessidade'
+          valor: ''
+        opcionais:
+          nome: 'Opcionais'
+          valor: ''
+        blindagem:
+          nome: 'Blindagem'
+          valor: ''
+        oportunidades:
+          nome: 'Oportunidades'
+          valor: ''
+        documentacao:
+          nome: 'Documentação'
+          valor: ''
+        anunciante:
+          nome: 'Anunciante'
+          valor: ''
+    profiles:
+      - anuncio_carro_pf_com_telefone_desabilitado
+  - veiculo: 'Carros'
+    filtros:
+        km:
+          nome: 'KM'
+          valor: ''
+        estado:
+          nome: 'Estado'
+          valor: ''
+        cidade:
+          nome: 'Cidade'
+          valor: ''
+        distancia:
+          nome: 'Distância'
+          valor: ''
+        marca:
+          nome: 'Marca'
+          valor: 'BMW'
+        modelo:
+          nome: 'Modelo'
+          valor: '118i'
+        versao:
+          nome: 'Versão'
+          valor: '1.6 SPORT GP 16V TURBO GASOLINA 4P AUTOMÁTICO'
+        ano:
+          nome: 'Ano'
+          valor: ''
+        preco:
+          nome: 'Preço'
+          valor: ''
+        cambio:
+          nome: 'Câmbio'
+          valor: ''
+        combustivel:
+          nome: ''
+          valor: ''
+        portas:
+          nome: 'Portas'
+          valor: ''
+        cor:
+          nome: 'Cor'
+          valor: ''
+        final_da_placa:
+          nome: 'Final da Placa'
+          valor: ''
+        carroceria:
+          nome: 'Carroceria'
+          valor: ''
+        tipo_de_necessidade:
+          nome: 'Tipo de Necessidade'
+          valor: ''
+        opcionais:
+          nome: 'Opcionais'
+          valor: ''
+        blindagem:
+          nome: 'Blindagem'
+          valor: ''
+        oportunidades:
+          nome: 'Oportunidades'
+          valor: ''
+        documentacao:
+          nome: 'Documentação'
+          valor: ''
+        anunciante:
+          nome: 'Anunciante'
+          valor: 'Pessoa Física'
+    profiles:
+      - anuncio_carro_pf_com_telefone_habilitado
+  - veiculo: 'Motos'
+    filtros:
+        km:
+          nome: 'KM'
+          valor: ''
+        estado:
+          nome: 'Estado'
+          valor: ''
+        cidade:
+          nome: 'Cidade'
+          valor: ''
+        distancia:
+          nome: 'Distância'
+          valor: ''
+        marca:
+          nome: 'Marca'
+          valor: 'SUNDOWN'
+        modelo:
+          nome: 'Modelo'
+          valor: 'MAX SED'
+        versao:
+          nome: 'Versão'
+          valor: ''
+        ano:
+          nome: 'Ano'
+          valor: ''
+        preco:
+          nome: 'Preço'
+          valor: ''
+        cambio:
+          nome: 'Câmbio'
+          valor: ''
+        combustivel:
+          nome: ''
+          valor: ''
+        portas:
+          nome: 'Portas'
+          valor: ''
+        cor:
+          nome: 'Cor'
+          valor: ''
+        final_da_placa:
+          nome: 'Final da Placa'
+          valor: ''
+        carroceria:
+          nome: 'Carroceria'
+          valor: ''
+        tipo_de_necessidade:
+          nome: 'Tipo de Necessidade'
+          valor: ''
+        opcionais:
+          nome: 'Opcionais'
+          valor: ''
+        blindagem:
+          nome: 'Blindagem'
+          valor: ''
+        oportunidades:
+          nome: 'Oportunidades'
+          valor: ''
+        documentacao:
+          nome: 'Documentação'
+          valor: ''
+        anunciante:
+          nome: 'Anunciante'
+          valor: 'Pessoa Física'
+    profiles:
+      - anuncio_moto_pf_com_telefone_desabilitado
+  - veiculo: 'Motos'
+    filtros:
+        km:
+          nome: 'KM'
+          valor: ''
+        estado:
+          nome: 'Estado'
+          valor: ''
+        cidade:
+          nome: 'Cidade'
+          valor: ''
+        distancia:
+          nome: 'Distância'
+          valor: ''
+        marca:
+          nome: 'Marca'
+          valor: 'YAMAHA'
+        modelo:
+          nome: 'Modelo'
+          valor: 'YFM 350R'
+        versao:
+          nome: 'Versão'
+          valor: ''
+        ano:
+          nome: 'Ano'
+          valor: ''
+        preco:
+          nome: 'Preço'
+          valor: ''
+        cambio:
+          nome: 'Câmbio'
+          valor: ''
+        combustivel:
+          nome: ''
+          valor: ''
+        portas:
+          nome: 'Portas'
+          valor: ''
+        cor:
+          nome: 'Cor'
+          valor: ''
+        final_da_placa:
+          nome: 'Final da Placa'
+          valor: ''
+        carroceria:
+          nome: 'Carroceria'
+          valor: ''
+        tipo_de_necessidade:
+          nome: 'Tipo de Necessidade'
+          valor: ''
+        opcionais:
+          nome: 'Opcionais'
+          valor: ''
+        blindagem:
+          nome: 'Blindagem'
+          valor: ''
+        oportunidades:
+          nome: 'Oportunidades'
+          valor: ''
+        documentacao:
+          nome: 'Documentação'
+          valor: ''
+        anunciante:
+          nome: 'Anunciante'
+          valor: 'Pessoa Física'
+    profiles:
+      - anuncio_moto_pf_com_telefone_habilitado
+      
+dados_veiculo:
+  - veiculo: 'Carro'
+    placa: 'gerar'
+    dados:
+        opcao1:
+          chave: 'Selecione uma marca'
+          valor: 'JEEP'
+        opcao2:
+          chave: 'Selecione um modelo'
+          valor: 'RENEGADE'
+        opcao3:
+          chave: 'Ano modelo'
+          valor: '2023'
+        opcao4:
+          chave: 'Ano veículo'
+          valor: '2023'
+        opcao5:
+          chave: 'Selecionar uma versão'
+          valor: '1.3 T270 TURBO FLEX TRAILHAWK 4X4 AT9'
+        opcao6:
+          chave: 'Selecionar um tipo de combustível'
+          valor: 'Gasolina'
+        opcao7:
+          chave: 'Selecionar a quantidade de portas'
+          valor: '4'
+        opcao8:
+          chave: 'Selecionar a cor'
+          valor: 'Preto'
+        opcao9:
+          chave: 'Selecionar o câmbio'
+          valor: 'Automática'
+    opcionais:
+        chave: 'Selecionar opcionais'
+        valor: 
+          - 'Ar condicionado'
+          - 'Ar quente'
+    caracteristica:
+        chave: 'Selecionar característica'
+        valor: 
+          - 'IPVA Pago'
+          - 'Licenciado'
+    km: '92220'
+    valor: '156469'
+    profiles:
+      - renegade
+  - veiculo: 'Carro'
+    placa: 'gerar'
+    dados:
+        opcao1:
+          chave: 'Selecione uma marca'
+          valor: 'Renault'
+        opcao2:
+          chave: 'Selecione um modelo'
+          valor: 'kwid'
+        opcao3:
+          chave: 'Ano modelo'
+          valor: '2023'
+        opcao4:
+          chave: 'Ano veículo'
+          valor: '2022'
+        opcao5:
+          chave: 'Selecionar uma versão'
+          valor: 'ZEN'
+        opcao6:
+          chave: 'Selecionar um tipo de combustível'
+          valor: 'Gasolina'
+        opcao7:
+          chave: 'Selecionar a quantidade de portas'
+          valor: '4'
+        opcao8:
+          chave: 'Selecionar a cor'
+          valor: 'Azul'
+        opcao9:
+          chave: 'Selecionar o câmbio'
+          valor: 'Manual'
+    opcionais:
+        chave: 'Selecionar opcionais'
+        valor: 
+          - 'Air Bag'
+          - 'Alarme'
+          - 'Ar condicionado'
+    caracteristica:
+        chave: 'Selecionar característica'
+        valor: 
+          - 'IPVA Pago'
+          - 'Licenciado'
+          - 'Único Dono'
+    km: '1000'
+    valor: '36000'
+    profiles:
+      - kwid
+  - veiculo: 'Moto'
+    placa: 'gerar'
+    dados:
+        opcao1:
+          chave: 'Selecionar uma marca'
+          valor: 'BMW'
+        opcao2:
+          chave: 'Selecionar um modelo'
+          valor: 'F 800 R'
+        opcao3:
+          chave: 'Ano modelo'
+          valor: '2017'
+        opcao4:
+          chave: 'Ano veículo'
+          valor: '2016'
+        opcao5:
+          chave: 'Selecionar a cor primária'
+          valor: 'Amarelo'
+        opcao6:
+          chave: 'Selecionar a cor secundária'
+          valor: 'Azul'
+        opcao7:
+          chave: 'Selecionar um tipo de alimentação'
+          valor: 'Carburador'
+        opcao8:
+          chave: 'Selecionar um tipo de refrigeração'
+          valor: 'Ar'
+        opcao9:
+          chave: 'Selecionar um tipo de motor'
+          valor: '2 tempos'
+        opcao10:
+          chave: 'Selecionar um tipo de partida'
+          valor: 'Pedal'
+        opcao11:
+          chave: 'Selecionar um tipo de freio'
+          valor: 'Disco/disco'
+        opcao12:
+          chave: 'Selecionar a quantidade de marchas'
+          valor: 'Automático'
+    opcionais:
+        chave: 'Selecionar opcionais'
+        valor: 
+          - 'ABS'
+          - 'Alarme'
+          - 'Faróis de neblina'
+    caracteristica:
+        chave: 'Selecionar característica'
+        valor: 
+          - 'IPVA Pago'
+          - 'Licenciado'
+          - 'Único Dono'
+    km: '1000'
+    valor: '36000'
+    profiles:
+      - padrao
+      - f_800_r
+
+pagamento:
+  - cep: '77001486'
+    plano: 'Premium'
+    meio_de_pagamento: 'cartao'
+    numero: '5441255689967673'
+    nome: 'Teste Automacao'
+    vencimento: '0225'
+    cvv: '741'
+    parcelas: '1'
+    profiles:
+      - cartao_premium
+  - cep: '49027350'
+    plano: 'Premium'
+    meio_de_pagamento: 'boleto'
+    numero: ''
+    nome: 'Boleto de automacao'
+    endereco: 'Av Teste Automacao'
+    numero_end: '001'
+    complemento: 'bloco 2 apt 10'
+    vencimento: ''
+    cvv: ''
+    parcelas: ''
+    profiles:
+      - boleto_premium
+  - cep: '77825560'
+    plano: 'Premium'
+    meio_de_pagamento: 'pix'
+    numero: ''
+    nome: ''
+    endereco: ''
+    numero_end: ''
+    complemento: ''
+    vencimento: ''
+    cvv: ''
+    parcelas: ''
+    profiles:
+      - pix_premium
+  - cep: '08062260'
+    plano: 'Plus'
+    meio_de_pagamento: 'cartao'
+    numero: '5441255689967673'
+    nome: 'Teste Automacao'
+    vencimento: '0225'
+    cvv: '741'
+    parcelas: '1'
+    profiles:
+      - cartao_plus
+  - cep: '08062260'
+    plano: 'Plus'
+    meio_de_pagamento: 'boleto'
+    numero: ''
+    nome: 'Boleto de automacao'
+    endereco: 'Av Teste Automacao'
+    numero_end: '001'
+    complemento: 'bloco 2 apt 10'
+    vencimento: ''
+    cvv: ''
+    parcelas: ''
+    profiles:
+      - boleto_plus
+  - cep: '08062260'
+    plano: 'Plus'
+    meio_de_pagamento: 'pix'
+    numero: ''
+    nome: ''
+    endereco: ''
+    numero_end: ''
+    complemento: ''
+    vencimento: ''
+    cvv: ''
+    parcelas: ''
+    profiles:
+      - pix_plus

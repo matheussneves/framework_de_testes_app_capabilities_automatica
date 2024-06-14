@@ -1,0 +1,13 @@
+# config/cucumber.yml
+##YAML Template
+---
+android: -p pretty -p json_report -p allure AMBIENTE=stage PLATFORM=android SCREENSHOT_PATH=screenshots/android/ -r features/support  -r features/common/step_definitions --publish
+ios: -p pretty -p json_report -p allure AMBIENTE=stage PLATFORM=ios SCREENSHOT_PATH=screenshots/ios/ -r features/support  -r features/common/step_definitions --publish
+
+pretty: --format pretty
+json_report: --format json --out=relatorios/report.json
+html_report: --format html --out=relatorios/report.html
+allure: --format AllureCucumber::CucumberFormatter --out allure-results
+
+virtual: TYPE_DEVICE=virtual
+real: TYPE_DEVICE=real

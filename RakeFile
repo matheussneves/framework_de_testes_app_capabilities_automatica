@@ -1,0 +1,49 @@
+require 'cucumber/rake/task'
+require 'rubygems'
+require 'tty-command'
+require 'pry'
+
+desc('Running RuboCop Lints')
+task :lint do
+  system 'bundle exec rubocop -a > /dev/null'
+  system 'bundle exec rubocop'
+end
+
+task :clean do
+  puts "limpando pasta reports..."
+  system "rm -f reports/*.json"
+  puts "limpando pasta screenshots..."
+  system "rm -f screenshots/ios/*.png"
+  system "rm -f screenshots/android/*.png"
+  puts "limpando txt de rerun testes..."
+  system "rm rerun*.txt"
+  puts "limpando logs..."
+  system "rm *.log"
+  system "rm *.out"
+end
+
+
+def execute_command(command, exception: true)
+  `bundle` unless File.exist?('Gemfile.lock')
+  puts command
+  system(command, exception: exception)
+rescue StandardError => error
+  raise 'Erro de execução no Bundler' if error.to_s.include? 'bundler: failed to load command: parallel_cucumber'
+end
+
+task :run_tests, %i[env type_device device_name emulator tag] do |_task, args|
+  ENV['ENV'] = args.type_device
+  ENV['TYPE_DEVICE'] = args.type_device
+  ENV['DEVICE_NAME'] = args.device_name
+  ENV['EMULATOR'] = args.emulator
+  if args.type_device.downcase.eql?('android')
+    puts('s')
+  else
+    puts args.emulator
+  end
+
+  comand = "cucumber -t @#{args.tag}"
+  
+  execute_command comand
+end
+ 
