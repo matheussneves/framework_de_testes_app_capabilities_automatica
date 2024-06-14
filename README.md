@@ -1,0 +1,2 @@
+# framework_de_testes_app_capabiliti_automatica
+ 
