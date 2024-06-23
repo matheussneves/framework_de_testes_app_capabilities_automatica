@@ -21,3 +21,7 @@ $ gem install bundler
 
 # Instale todas as dependências
 $ bundle install
+
+# Comando para execução
+bundle exec cucumber -p < android ou ios > -p <virtual ou real>  -t @detalhes
+
