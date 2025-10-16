@@ -1,0 +1,100 @@
+---
+openapi: 3.1.0
+info:
+  title: LEMMIT_API
+  version: 0.1.0
+paths:
+  "/v1/healthcheck":
+    get:
+      tags:
+      - Healthy check endpoint
+      summary: Healthcheck
+      operationId: healthcheck_v1_healthcheck_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+  "/v1/{document}":
+    get:
+      tags:
+      - Get person data
+      summary: Person
+      operationId: person_v1__document__get
+      parameters:
+      - name: document
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Document
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/HTTPValidationError"
+  "/v2/{document}":
+    get:
+      tags:
+      - Get person data
+      summary: Person
+      operationId: person_v2__document__get
+      parameters:
+      - name: document
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Document
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/HTTPValidationError"
+components:
+  schemas:
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            "$ref": "#/components/schemas/ValidationError"
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError

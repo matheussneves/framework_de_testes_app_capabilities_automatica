@@ -1,27 +1,44 @@
-# Automação testes funcionais dos apps #
-Projeto para utilização e padronização em projetos de automação de testes para mobile, na linguagem Ruby
+# Automação API
+Projeto de automação de testes para as APIs
 
-## Como o projeto está organizado ##
-***
-# Configuração do projeto para executar no Windows #
-## Pré-requisitos❗ ##
-Para executar as automações contidas nesse projeto é necessário ter instalado:
-- [Ruby](https://www.ruby-lang.org/pt/documentation/installation/)
-- [Appium](https://eliasnogueira.github.io/appium-workshop/)
-- [Android Studio](https://developer.android.com/studio)
-  - Após finalizar a instalação é necessário atribuir as seguintes variáveis como variáveis de ambiente:
-      C:\Users\{{SeuUsuário}}\AppData\Local\Android\Sdk\emulator
-      C:\Users\{{SeuUsuário}}\AppData\Local\Android\Sdk\platform-tools
-- Download da versão full do [CMDER](https://cmder.net/)
+## Uso
 
-- [JDK > 8](https://www.oracle.com/java/technologies/downloads/#java8-windows)
+Para executar algum cenário / suíte:
+```sh
+$ cucumber -t <TAG> -p <AMBIENTE> -p default
+```
 
-# Instale a gem Bundler
-$ gem install bundler
+## Desenvolvimento
 
-# Instale todas as dependências
-$ bundle install
+Para criar um cenário:
+- Criar o cenário na estrutura `features\gherkins\<SISTEMA>\<FLUXO>`
+- Criar os steps na estrutura `features\steps_definitions\<SISTEMA>\<FLUXO>`
+- Criar a abstração dos page_objects na estrutura `features\support\spec_helper\<SISTEMA>`
 
-# Comando para execução
-bundle exec cucumber -p < android ou ios > -p <virtual ou real>  -t @detalhes
+## Gerador automático dos cenários da API
 
+1. Configurar a URL da API na estrutura `features\support\config\<AMBIENTE>.yaml`
+2. Executar o comando:
+```sh
+$ rake 'automation_generator[<NOME_API>,<ENDPOINT>]'
+```
+
+3. Serão gerados / configurados os seguintes arquivos:
+    - Será gerado o Client, na estrutura `features\clients\<BASE_PATH>\<ENDPOINT>.rb`
+    - Será gerada a configuração da URL da API, na estrutura `features\support\config\<AMBIENTE.yaml`
+    - Será gerado o spec_helper da API, na estrutura `features\support\spec_helper\<NOME_API>_spec.rb`
+    - Será gerado o Gherkin do endpoint, na estrutura `features\gherkins\<BASE_PATH>\<ENDPOINT>.feature`
+    - Serão gerados os Steps dos cenários, na estrutura `features\steps_definitions\<BASE_PATH>\<ENDPOINT>_steps.rb`
+4. Preencher as tags pendentes no Gherkin
+5. Popular os parâmetros gerados no step "Dado"
+6. Fazer todas as validações necessárias no step "Então"
+
+## Instalação client Oracle DB
+
+1. Acessar
+32-bit http://www.oracle.com/technetwork/topics/winsoft-085727.html
+64-bit http://www.oracle.com/technetwork/topics/winx64soft-089540.html
+2. Fazer o download da versão mais recente do client "Instant Client Package - Basic"
+3. Extrair os arquivos
+4. Adicionar esta pasta na variável de ambiente PATH
+5. Reiniciar a máquina

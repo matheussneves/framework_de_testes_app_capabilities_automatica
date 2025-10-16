@@ -1,32 +1,48 @@
-['appium_lib', 'cucumber', 'documentos_br', 'faker', 'net/sftp', 'open3', 'parallel_tests', 'percentage', 'pry', 'cpf_cnpj', 'allure-cucumber', 'byebug',
- 'rexml/document', 'rspec', 'rspec/expectations', 'rspec/core', 'rubygems', 'os', 'selenium-webdriver', 'savon', 'touch_action', 'json', 'active_support/all', 'report_builder', 'date','cpf_faker', 'excon'].each do |dependency| 
-  require dependency
-end #, 'httparty'
-Dir[File.join(File.dirname(__FILE__), 'commons', '*.rb')].sort.each { |file| require_relative file }
+Dir[File.join(File.dirname(__FILE__), 'commons/*.rb')].sort.each { |file| require_relative file }
 
-Dir[File.join(File.dirname(__FILE__), '../../../testes-api/features/support/commons', '*.rb')].sort.each { |file| require_relative file }
-Dir[File.join(File.dirname(__FILE__), 'page_helper', '*.rb')].sort.each { |file| require_relative file }
-World(PageObjects)
-# Allure
-AllureCucumber.configure do |c|
- c.clean_results_directory = true
-end
-binding.pry
-APP_ENV_DATA = YAML.load_file("#{Dir.pwd}/features/support/data/hk.yaml")
-APP_STANDARD_DATA = YAML.load_file("#{Dir.pwd}/features/support/data/standard.yaml")
-PLATFORM = ENV.fetch('PLATFORM', nil)
-$wait = Selenium::WebDriver::Wait.new(timeout: 30)
-Encoding.default_external = Encoding::UTF_8
-Encoding.default_internal = Encoding::UTF_8
-TYPE_DEVICE = ENV['TYPE_DEVICE'].eql?(nil) ? 'virtual' : ENV['TYPE_DEVICE']
-TIME_COMMAND = 30
-DEVICE = load_local_devices(TYPE_DEVICE).first
-DEVICE_ID = DEVICE.split(':::')[1]
-DEVICE_NAME = DEVICE.split(':::').first
-TEST_LOCATION = DEVICE.split(':::').last
-PATH_APP = "./config/app/#{PLATFORM.downcase}/#{android? ? 'app-hk-release.apk' : "app.#{real? ? 'ipa' : 'app'}"}"
-APP_CONFIG_DATA = YAML.load_file(File.expand_path(File.join('config', 'standard.yaml'), __dir__))
-Appium::Driver.new(load_appium_capabilities, true)
-Faker::Config.locale = 'pt-BR'
+require 'csv'
+require 'write_xlsx'
+require 'cpf_faker'
+require 'cucumber'
+require 'dbi'
+require 'excon'
+require 'faker'
+require 'faraday'
+require 'faraday_middleware'
+require 'mime/types'
+require 'pry'
+require 'report_builder'
+require 'rspec'
+require 'net/sftp'
+require 'net/ssh'
+require 'holidays'
+require 'httparty'
 
-Appium.promote_appium_methods Object
+# service gems
+require 'documentos_br'
+require 'os'
+require 'savon'
+require 'parallel_tests'
+
+ENVIRONMENT_TYPE = ENV.fetch('ENVIRONMENT_TYPE', nil) unless defined?(ENVIRONMENT_TYPE)
+NEW_DATA_DIR = "#{File.dirname(__FILE__)}/data".freeze
+NEW_DATA_FILES_DIR = "#{NEW_DATA_DIR}/files".freeze
+
+API_CONFIG = YAML.load_file("#{File.dirname(__FILE__)}/config/#{ENVIRONMENT_TYPE}.yaml")
+API_DATA = YAML.load_file("#{File.dirname(__FILE__)}/data/#{ENVIRONMENT_TYPE}.yaml")
+API_ENV_DATA_NEW = YAML.load_file("#{NEW_DATA_DIR}/#{ENVIRONMENT_TYPE}.yaml")
+EXCON_LOG = ENV['EXCON_LOG'].eql?('true')
+LOCAL = ENV['LOCAL'].eql?('true')
+MOCK = ENV['MOCK'].eql?('true')
+GENERIC_MOCK = ENV['GENERIC_MOCK'].eql?('true')
+MOCK_LIST = ENV.fetch('MOCK_LIST', nil)&.split(',') || []
+
+INGRESS_TESTING = 'ingress_testing'.freeze
+API_GATEWAY_TESTING = 'api_gateway_testing'.freeze
+INTEGRATION_TESTING = 'integration_testing'.freeze
+
+ParameterType(
+  name: 'tipo',
+  regexp: /positivo|negativo|validacao/,
+  transformer: ->(type) { type }
+)
