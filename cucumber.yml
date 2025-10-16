@@ -1,13 +1,30 @@
-# config/cucumber.yml
-##YAML Template
----
-android: -p pretty -p json_report -p allure AMBIENTE=stage PLATFORM=android SCREENSHOT_PATH=screenshots/android/ -r features/support  -r features/common/step_definitions --publish
-ios: -p pretty -p json_report -p allure AMBIENTE=stage PLATFORM=ios SCREENSHOT_PATH=screenshots/ios/ -r features/support  -r features/common/step_definitions --publish
+# Template
+default: -p html_report -p json_report -p cdev3 --publish-quiet
+parallel: -p parallel_logs -p parallel_html_report -p parallel_json_report --publish-quiet
+rerun: -p rerun_html_report -p rerun_json_report --publish-quiet
+local: -p excon_log -p default LOCAL=true
+mock: MOCK=true
+generic_mock: GENERIC_MOCK=true -p mock
 
-pretty: --format pretty
-json_report: --format json --out=relatorios/report.json
-html_report: --format html --out=relatorios/report.html
-allure: --format AllureCucumber::CucumberFormatter --out allure-results
+# Reports
+html_report: --format pretty --format html --out=reports/features_report.html
+json_report: --format pretty --format json --out=reports/features_report.json
+parallel_html_report: --format pretty --format html --out reports/parallel/<%= ENV['EXEC_TYPE'] %>/report_<%= ENV['TEST_ENV_NUMBER'] %>.html
+parallel_json_report: --format pretty --format json --out reports/parallel/<%= ENV['EXEC_TYPE'] %>/report_<%= ENV['TEST_ENV_NUMBER'] %>.json
+rerun_html_report: --format pretty --format html --out reports/parallel/<%= ENV['EXEC_TYPE'] %>/rerun_<%= ENV['TEST_ENV_NUMBER'] %>.html
+rerun_json_report: --format pretty --format json --out reports/parallel/<%= ENV['EXEC_TYPE'] %>/rerun_<%= ENV['TEST_ENV_NUMBER'] %>.json
+dry_run_report: -q -r env.rb --dry-run --format json --out=reports/features_report.json
 
-virtual: TYPE_DEVICE=virtual
-real: TYPE_DEVICE=real
+# Logs
+excon_log: EXCON_LOG=true
+parallel_logs: --no-color --out logs/execution_log_<%= ENV['TEST_ENV_NUMBER'] %>.log
+
+# Retry
+no_retry: NO_RETRY=true
+
+# Environments
+
+development: ENVIRONMENT_TYPE=development 
+staging: ENVIRONMENT_TYPE=staging
+production: ENVIRONMENT_TYPE=production
+

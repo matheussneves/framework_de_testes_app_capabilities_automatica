@@ -1,0 +1,56 @@
+root:
+  - data: value
+    data_variable:
+      default: value
+      data_x: Value
+      data_y: value
+    data_variable_two:
+      default: value
+      x: Value
+      z: value
+    profiles:
+      - profile_x
+      - profile_y
+      - system_y
+      - system_z
+    systems:
+      - cok
+      - pj
+      - pf
+  - data: Object two # você deve manter a mesma estrutura em todos os objetos pertencentes a uma raiz
+    data_variable:
+      default: value
+      data_x: Value
+      data_y: value
+    data_variable_two:
+      default: value
+      x: Value
+      z: value
+    profiles:
+      - profile_x
+      - system_y
+    systems:
+      - bmk
+
+dados_mobile:
+  - appVersion: '9.30'
+    deviceType: 1
+    iDSO: 2
+    isNotificacaoAtiva: true
+    latitude: 0
+    longitude: 0 
+    modelo: 'Google Android SDK built for '
+    permitirNotificacao: 1
+    root: 0
+    sO: 'Android'
+    sOVer: '10'
+    tknpsh: 'fhsbxuV2SYScPX4esGxD5t:APA91bH_eLfYW1tUjCBS03W2KxnK9nOqMB2VD7K7z_-EkEMJ1SC18efaQW36qzVe6VcQGmWzyk1qhJ3jOBImytcXn0ZIsw4Z-MlfpeWY_GpQsuURAxO9tdCQ91QnUCOnHppeAU-qqlEE'
+    usaJailBreak: 0
+    versaoHB: '3.2.0.476642'
+    identificadorTipoLogin: 5
+    retF10: 'evqhZMlujo4Vk1WNB2PWjKziwKdP+C1II7IfZBhcZp4WfwP0xhVYBWrCWjqBG347dX89DwaH8hvFX33E3nAf7ZfC4hgr+GpwkhxbvxJoGvQlX2ZbPQKL3LhAU2wyf7lIfJD4L1LUKLaEctGWXwHGKiyuIbTfbOZpCU1pGDPKds0=#S@C%K8P'
+    senha: '24HMN4'
+    profiles:
+      - mobile_android
+    systems:
+      - bmk
